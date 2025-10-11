@@ -24,11 +24,6 @@ The plan includes 10 mini projects, grouped by theme, with objectives, tools/tec
 - **Deliverables**: Server binary with 3 endpoints; demo script for load testing; Go modules file and tests.
 - **Success Criteria**: Processes 100 concurrent requests with <50ms latency; propagates errors via context cancellation.
 
-### Project 3: Log Parser Refactor (Perl)
-- **Objective**: Refactor a sample Jenkins log parser in Perl to extract failures using regex, adding Mojo for a basic web dashboard.
-- **Tech Stack**: Perl 5.x, Mojolicious, Regexp::Common.
-- **Deliverables**: Modular script with web route for log upload/results; sample log file for testing.
-- **Success Criteria**: Parses multi-line failures accurately; serves JSON output via HTTP endpoint.
 
 ## 2. CI/CD and Build Tools Mini Projects
 
@@ -50,11 +45,6 @@ The plan includes 10 mini projects, grouped by theme, with objectives, tools/tec
 - **Deliverables**: YAML pipeline file; sample app repo; scan report artifact.
 - **Success Criteria**: Runs lint/build/test in parallel; fails on high-severity vulnerabilities.
 
-### Project 7: Build Tool Migration Simulator
-- **Objective**: Migrate a sample Java SDN module from Maven to Gradle, adding a custom plugin for dependency locking and Gerrit webhook.
-- **Tech Stack**: Gradle 8.x, Maven, Gerrit API.
-- **Deliverables**: Before/after build files; plugin JAR; Gerrit trigger test script.
-- **Success Criteria**: Maintains identical outputs; resolves dependencies in <1 minute.
 
 ## 3. Containerization, IaC, and Cloud Mini Projects
 
@@ -70,11 +60,6 @@ The plan includes 10 mini projects, grouped by theme, with objectives, tools/tec
 - **Deliverables**: .tf files; apply/destroy scripts; drift check workflow.
 - **Success Criteria**: Provisions cluster with 2 nodes; detects and reports config drift.
 
-### Project 10: Hybrid IaC Scenario
-- **Objective**: Use Pulumi for GCP VPC setup and Ansible for node config, ensuring idempotency.
-- **Tech Stack**: Pulumi Python SDK, Ansible 2.15+, Vault for secrets.
-- **Deliverables**: Pulumi program; Ansible playbook; integration test.
-- **Success Criteria**: Deploys VPC and configures 2 nodes idempotently; handles secret rotation.
 
 ## Implementation Guidelines
 - **Repository Structure**: One repo per project or monorepo with subfolders; include CI badge and demo video/GIF.
